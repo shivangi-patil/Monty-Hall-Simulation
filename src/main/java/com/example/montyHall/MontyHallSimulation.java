@@ -67,10 +67,31 @@ public class MontyHallSimulation {
                 //Check to see if user won or lost
                 if(user_door == prize_door){
                     System.out.println("Congratulations! You won the prize!");
+
                 } else {
                     System.out.println("Sorry. You lost.");
                 }
 
+                if (userReply=='y')
+                {
+                    if (user_door==prize_door)
+                    {
+                        System.out.println("Hence, you should change the door");
+                    }
+                    else{
+                        System.out.println("Hence, you should stay with your choice");
+                    }
+                }
+                if (userReply=='n')
+                {
+                    if (user_door==prize_door)
+                    {
+                        System.out.println("Hence, you should stay with your choice");
+                    }
+                    else{
+                        System.out.println("Hence, you should change the door");
+                    }
+                }
             }
         }
 
